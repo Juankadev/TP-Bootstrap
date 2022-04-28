@@ -1,0 +1,65 @@
+body{
+    padding:0;
+    margin:0;
+    background-color: black;
+    color: white;
+}
+
+header{
+    padding: 15px 0;
+}
+
+.logo{
+    width: 100px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.menu-item {
+    display: inline-block;
+    list-style: none;
+}
+.menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.div-iframe{
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    width: 100vw;
+}
+
+
+main section.estrenos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    text-align: center;
+}
+
+main section.estrenos article {
+    width: calc(100%/4);
+    /*overflow: hidden;*/
+}
+main section.estrenos article img{
+    box-shadow: 0 0 5px #fff;
+    transition: 500ms;
+}
+main section.estrenos article img:hover{
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px) {
+    main section.estrenos article {
+        width: calc(100%/2);
+    }
+}
