@@ -1,13 +1,17 @@
 *{
     box-sizing: border-box;
     flex-flow: wrap;
+    margin: 0px;
 }
-body{
-    background-color: black;
+main{
+    background-color: rgb(233, 233, 237);
 }
 header{
     padding: 15px 0;
+    background-color: black;
+    margin: 0px;
 }
+
 
 .logo{
     width: 100px;
@@ -30,20 +34,22 @@ ul {
 
 .container{
     display: flex;
-    width: 75%;
+    width: 100%;
     padding: 10px;
-    /*justify-content: flex-end;*/
-    align-content: space-between;
-    float: left;
-    justify-content:end;
     text-align: center;
+    justify-content: flex-end;
+
 }
 .back1{
-    background-color: grey;
+    background-color: rgb(214, 214, 214);
+    width: 75%;
+    float: left;
 }
 
 .back2{
-    background-color:black;
+    background-color:rgb(233, 233, 237);
+    width: 75%;
+    float: left;
 }
 
 .container aside{
@@ -52,9 +58,10 @@ ul {
     float: right;
     text-align: center;
     margin: 10px,0px;
-    border: solid black 2px;
     color: white;
-    height:fit-content;
+    border-radius: 0px 10px 10px 0px;
+    height: 200px;
+    width: 100px;
 }
 
 .container div{
@@ -62,16 +69,24 @@ ul {
     margin: 10px;
     color: black;
     background-color: white;
+    border-radius: 10px;
+}
+
+.container h2{
+    float: left;
 }
 
 .as1{
-    float: top;
     position: sticky;
+    float: right;
     top: 10px;
+    height: 500px;
 }
+
 footer {
     width: 100%;
     position: absolute;
-    bottom: 8px;
-    right: 16px;
+    bottom: 0px;
+   
   }
+
