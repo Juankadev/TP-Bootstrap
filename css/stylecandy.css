@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    flex-flow: wrap;
+
     margin: 0px;
 }
 main{
@@ -34,6 +34,7 @@ ul {
 
 .container{
     display: flex;
+    flex-flow: wrap;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -64,6 +65,18 @@ ul {
     width: 100px;
 }
 
+.div1{
+    background-color: lightslategray;
+    color: antiquewhite;
+    float: right;
+    text-align: center;
+    margin: 10px,0px;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    height: 200px;
+    width: 100px;
+}
+
 .container div{
     float : left;
     margin: 10px;
@@ -76,17 +89,27 @@ ul {
     float: left;
 }
 
+.conteiner h3{
+    float:right;
+}
+main{
+    position: relative;
+}
+
 .as1{
-    position: sticky;
-    float: right;
-    top: 10px;
+    right: 10px;
+    top: 100px;
     height: 500px;
 }
 
+.imas{
+    position: sticky;
+    right: 10px;
+    top: 100px;
+}
+
 footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-   
+    width: 100%;   
+    float: left;
   }
 
