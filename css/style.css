@@ -42,7 +42,7 @@ text-decoration:underline;
     padding: 0;
 }
 
-iframe {
+iframe.inicio {
     width: 100vw;
 }
 

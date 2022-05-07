@@ -1,0 +1,36 @@
+main{
+    padding: 40px 0;
+}
+article.presentacion{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 50px;
+    width: 100vw;
+}
+
+article.presentacion > .pelicula > img{
+    transition: 500ms;
+}
+article.presentacion > .pelicula > img:hover{
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.512);
+}
+
+iframe.trailer{
+    width: 100%;
+}
+
+
+.button{
+text-align: center;
+}
+.button>a{
+    background-color: red;
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 500ms;
+}
+.button>a:hover{
+    background-color:blueviolet;
+}
