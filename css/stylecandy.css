@@ -3,13 +3,19 @@
 
     margin: 0px;
 }
+
 main{
     background-color: rgb(233, 233, 237);
+    position: relative;
 }
+
 header{
-    padding: 15px 0;
+    padding: 15px 15px;
+    /*position:fixed;*/
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
     background-color: black;
-    margin: 0px;
 }
 
 
@@ -21,15 +27,20 @@ ul {
     margin: 0;
     padding: 0;
     float: right;
+    font-size:20px
 }
 
 .menu-item {
     display: inline-block;
     list-style: none;
+    padding: 0 15px;
 }
 .menu-item a {
     color: white;
     text-decoration: none;
+}
+.menu-item a:hover {
+text-decoration:underline;
 }
 
 .container{
@@ -39,6 +50,7 @@ ul {
     padding: 10px;
     text-align: center;
     justify-content: flex-end;
+
 }
 .back1{
     background-color: rgb(214, 214, 214);
@@ -52,6 +64,7 @@ ul {
     float: left;
 }
 
+/*
 .container aside{
     background-color: lightslategray;
     color: antiquewhite;
@@ -63,6 +76,7 @@ ul {
     height: 200px;
     width: 100px;
 }
+*/
 
 .div1{
     background-color: lightslategray;
@@ -70,7 +84,6 @@ ul {
     float: right;
     text-align: center;
     margin: 10px,0px;
-    color: white;
     border-radius: 0px 10px 10px 0px;
     height: 200px;
     width: 100px;
@@ -91,20 +104,30 @@ ul {
 .conteiner h3{
     float:right;
 }
+
 main{
     position: relative;
+    height: 100%;
 }
 
+
 .as1{
-    right: 10px;
-    top: 100px;
-    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    right: 0px;
+    top: 0px;
+    width: 25%;
+    float: right;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(233, 233, 237);
 }
 
 .imas{
     position: sticky;
-    right: 10px;
+    right: 75px;
     top: 100px;
+    position: absolute;
 }
 
 footer {
