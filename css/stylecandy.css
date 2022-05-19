@@ -88,22 +88,17 @@ text-decoration:underline;
 
 
 .div3{
-    float : left;
     margin: 10px;
+    float : left;
     color: black;
-    background-color: white;
     border-radius: 10px;
 }
 .div3 div{
     float : left;
-    margin: 10px;
     color: black;
     background-color: white;
-    border-radius: 10px;
-}
-.div3 p{
-    width: 200px;
-    font-size: 12px;
+    border-radius: 10px 0px 0px 10px;;
+    height: 180px;
 }
 
 .div3 div:nth-child(3){
@@ -113,9 +108,15 @@ text-decoration:underline;
     text-align: center;
     margin: 0px;
     border-radius: 0px 10px 10px 0px;
-    height: 200px;
-    width: 100px;
+    width: 75px;
 }
+.div3 p{
+    width: 200px;
+    font-size: 12px;
+}
+
+
+
 .div2{
     width: 75%;
     display: flex;
