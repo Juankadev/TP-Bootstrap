@@ -4,14 +4,12 @@
     margin: 0px;
 }
 body{
-    position: absolute;
     height: 100%;
 }
 
 main{
     background-color: rgb(233, 233, 237);
-    position: relative;
-    height: 100%;
+    position: relative;    
 }
 
 header{
@@ -32,7 +30,7 @@ ul {
     margin: 0;
     padding: 0;
     float: right;
-    font-size:20px
+    font-size:20px;
 }
 
 .menu-item {
@@ -57,16 +55,20 @@ text-decoration:underline;
     justify-content: flex-end;
 
 }
+
+
 .back1{
     background-color: rgb(214, 214, 214);
-    width: 75%;
+    width: 100%;
     float: left;
+    height: 100%;
 }
 
 .back2{
     background-color:rgb(233, 233, 237);
-    width: 75%;
+    width: 100%;
     float: left;
+    height: 100%;
 }
 
 /*
@@ -85,32 +87,45 @@ text-decoration:underline;
 
 
 
-.container div{
+.div3{
     float : left;
     margin: 10px;
     color: black;
     background-color: white;
     border-radius: 10px;
 }
+.div3 div{
+    float : left;
+    margin: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+.div3 p{
+    width: 200px;
+    font-size: 12px;
+}
 
-.div1{
+.div3 div:nth-child(3){
     background-color: lightslategray;
     color: antiquewhite;
     float: right;
     text-align: center;
-    margin: 10px,0px;
+    margin: 0px;
     border-radius: 0px 10px 10px 0px;
     height: 200px;
     width: 100px;
+}
+.div2{
+    width: 75%;
+    display: flex;
+    flex-flow: column;
 }
 
 .container h2{
     float: left;
 }
 
-.conteiner h3{
-    float:right;
-}
 
 
 .as1{
@@ -120,15 +135,14 @@ text-decoration:underline;
     top: 0px;
     width: 25%;
     float: right;
-    position: relative;
+    position: absolute;
     height: 100%;
     background-color: rgb(233, 233, 237);
 }
 
 .imas{
     position: sticky;
-    right: 0px;
-    top: 100px;
+    top: 10px;
 }
 
 footer {
