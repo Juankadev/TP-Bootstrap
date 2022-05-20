@@ -17,7 +17,7 @@ justify-content: space-between;
     width: 100px;
 }
 
-ul {
+ul.menu {
     margin: 0;
     padding: 0;
     float: right;
@@ -64,6 +64,16 @@ main section.estrenos article img{
 }
 main section.estrenos article img:hover{
     transform: scale(1.05);
+}
+
+
+footer {
+    width: 100%;   
+    text-align: center;
+  }
+
+  footer div h4{
+    display:inline-block;
 }
 
 

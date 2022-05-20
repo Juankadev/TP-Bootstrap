@@ -162,6 +162,9 @@ h3{
 
 footer {
     width: 100%;   
-    float: left;
+    text-align: center;
   }
 
+  footer div h4{
+    display:inline-block;
+}
