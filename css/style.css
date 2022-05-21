@@ -1,33 +1,38 @@
+*{
+    padding:0;
+    margin:0;
+}
 body{
     padding:0;
     margin:0;
-    background-color: black;
+    background-color: #000;
     color: white;
 }
 
 header{
-    padding: 15px 15px;
- /*position:fixed;*/
-display:flex;
-align-items:center;
-justify-content: space-between;
+    position: relative;
+    background-color: url(/MINIONS\ 2\ Tráiler\ Español\ Latino\ 3\ \(2022\)\ Nace\ un\ Villano.mp4);
 }
 
-.logo{
-    width: 100px;
+
+nav {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    align-content: center;
 }
 
 ul.menu {
     margin: 0;
     padding: 0;
-    float: right;
-font-size:20px
+    font-size:20px;
 }
 
 .menu-item {
     display: inline-block;
     list-style: none;
-padding: 0 15px;
+    padding: 0 15px;
+    text-transform: uppercase;
 }
 .menu-item a {
     color: white;
@@ -37,48 +42,76 @@ padding: 0 15px;
 text-decoration:underline;
 }
 
-.div-iframe{
-    margin: 0;
-    padding: 0;
+.logo{
+    width: 100px;
+    margin-top: 10px;
 }
 
-iframe.inicio {
-    width: 100vw;
+video.video-banner{
+    width: 100%;
+    height: 600px;
+    object-fit: fill;
+    margin-top: -50px;
 }
 
+/*********************************/
 
-main section.estrenos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
+main {
+    margin: 0 50px;
     text-align: center;
 }
 
-main section.estrenos article {
-    width: calc(100%/4);
+main h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 60px 0 0px 0;
+}
+
+main section.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+}
+
+main section.peliculas article {
+    width: calc(100%/5);
     /*overflow: hidden;*/
 }
-main section.estrenos article img{
+main section.peliculas article img{
     box-shadow: 0 0 5px #fff;
     transition: 500ms;
+    margin: 40px 0 15px 0;
 }
-main section.estrenos article img:hover{
+main section.peliculas article img:hover{
     transform: scale(1.05);
 }
 
 
 footer {
+    margin-top: 60px;
+    padding: 20px 0;
     width: 100%;   
     text-align: center;
+    background-color: #202020;
   }
 
   footer div h4{
-    display:inline-block;
+    margin-top: 20px;
+}
+
+footer p{
+    margin-top: 20px;
 }
 
 
 @media screen and (max-width: 768px) {
-    main section.estrenos article {
+    main section.peliculas article {
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    main section.peliculas article {
         width: calc(100%/2);
     }
 }
