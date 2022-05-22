@@ -1,13 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 main{
-    padding: 40px 0;
+    width: 95%;
+    position: absolute;
+    top: -10px;
+    z-index: -2;
 }
+
 article.presentacion{
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    column-gap: 50px;
-    width: 100vw;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
 }
+
+div.pelicula{
+    width: 20%;
+}
+
+.divtrailer{
+    width: 80%;
+    height: 100vh;
+}
+
+iframe.trailer{
+    width: 100%;
+    height: 100%;
+}
+
 
 article.presentacion > .pelicula > img{
     transition: 500ms;
@@ -16,11 +37,11 @@ article.presentacion > .pelicula > img:hover{
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.512);
 }
 
-iframe.trailer{
-    width: 100%;
+article.presentacion > .pelicula .descripcion-parrafo{
+    margin-top: 10px;
 }
 
-
+/*
 .button{
 text-align: center;
 }
@@ -34,3 +55,4 @@ text-align: center;
 .button>a:hover{
     background-color:blueviolet;
 }
+*/

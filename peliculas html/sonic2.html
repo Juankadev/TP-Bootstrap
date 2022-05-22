@@ -10,48 +10,58 @@
 </head>
 <body>
     <header>
-        <img src="/TP-Bootstrap/logo.png" alt="" class="logo">
         <nav>
             <ul>
-                <li class="menu-item"><a href="/TP-Bootstrap/index.html">Peliculas</a></li>
-                <li class="menu-item"><a href="">Precios</a></li>
-                <li class="menu-item"><a href="/TP-Bootstrap/candy.html">Candy</a></li>
+                <li class="menu-item"><a href="index.html">Peliculas</a></li>
+                <li class="menu-item"><a href="precios.html">Precios</a></li>
+                <li class="menu-item"><img src="/logo.png" alt="" class="logo"></li>
+                <li class="menu-item"><a href="candy.html">Candy</a></li>
                 <li class="menu-item"><a href="">Crear Cuenta</a></li>
             </ul>
         </nav>
     </header>
 
-    <main style="background-color:#202020">
+    <main>
         <article class="presentacion">
+
             <div class="pelicula">
                 <img src="https://static.cinemarkhoyts.com.ar/Images/Posters/e2f5d8513500a8527a28160581098853.jpg?v=46032022" alt="">
-                <p>+13</p>
-                <p> <strong>Genero:</strong> Animación</p>
-                <p> <strong>Duración:</strong> 122min</p>
-                <p> <strong>Actores:</strong> Idris Elba, Jim Carrey</p>
-                <p> <strong>Director:</strong> Jeff Fowler</p>
+                <div class="descripcion">
+                    <h3>SONIC 2</h3>
+                    <p>+13</p>
+                    <p> <strong>Genero:</strong> Animación</p>
+                    <p> <strong>Duración:</strong> 122min</p>
+                    <p> <strong>Actores:</strong> Idris Elba, Jim Carrey</p>
+                    <p> <strong>Director:</strong> Jeff Fowler</p>
+                    <p class="descripcion-parrafo">El erizo azul favorito de todos está de regreso para una aventura de otro nivel en Sonic 2 La Película.</p>
+                </div>
             </div>
-            <div>
-                <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/xMqnQLeQgSw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3>SONIC 2</h3>
-                <p>El erizo azul favorito de todos está de regreso para una aventura de otro nivel en Sonic 2 La Película.</p>
-            </div>
+
+            <div class="divtrailer">
+                    <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/xMqnQLeQgSw?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>       
         </article>
 
-        <div class="button">
+        <!--
+                    <div class="button">
             <a href="/TP-Bootstrap/index.html">VOLVER</a>
         </div>
+        -->
+
     </main>
 
 
-    <footer>
-        <img src="../logo.png" alt="" class="logo">
+    <!--
+        <footer>
+        <img src="/logo.png" alt="" class="logo">
         <div> 
-            <h4>CARTELERA</h4>
-            <h4>CANDY</h4>
-            <h4>PRECIOS</h4>
+            <h4><a href="index.html">CARTELERA</a></h4>
+            <h4><a href="/candy.html">CANDY</a></h4>
+            <h4><a href="/precios.html">PRECIOS</a></h4>
         </div>
+        <p>2022 © Todos los derechos reservados</p>
     </footer>
+    -->
 
 </body>
 </html>

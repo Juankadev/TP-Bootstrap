@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
     padding:0;
@@ -11,14 +12,15 @@ body{
 
 header{
     position: relative;
+    background-color: #000;
 }
-
 
 nav {
     display:flex;
     justify-content: center;
     position: relative;
     align-content: center;
+    padding: 10px 0;
 }
 
 ul.menu {
@@ -43,7 +45,6 @@ text-decoration:underline;
 
 .logo{
     width: 100px;
-    margin-top: 10px;
 }
 
 video.video-banner{
@@ -90,6 +91,7 @@ main section.peliculas {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+    font-size: 13px;
 }
 
 main section.peliculas article {
@@ -97,12 +99,15 @@ main section.peliculas article {
     /*overflow: hidden;*/
 }
 main section.peliculas article img{
-    box-shadow: 0 0 5px #fff;
     transition: 500ms;
     margin: 40px 0 15px 0;
 }
 main section.peliculas article img:hover{
     transform: scale(1.05);
+    box-shadow: 0 0 10px #fff;
+}
+main section.peliculas article h3{
+    font-weight: 100;
 }
 
 
@@ -146,9 +151,6 @@ footer p{
     }
     main section.peliculas article img:hover{
         transform: scale(0.95);
-    }
-    main section.peliculas article h3{
-        font-size: 15px;
     }
 }
 
