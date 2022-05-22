@@ -65,7 +65,7 @@ video.video-banner{
 }
 .video-img:hover{
     transform: rotateY(360deg);
-    box-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 17px #fff;
 }
 header h4{
     position: absolute;
@@ -104,7 +104,7 @@ main section.peliculas article img{
 }
 main section.peliculas article img:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 7px #fff;
 }
 main section.peliculas article h3{
     font-weight: 100;
