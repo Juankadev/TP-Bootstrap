@@ -71,22 +71,6 @@ text-decoration:underline;
     height: 100%;
 }
 
-/*
-.container aside{
-    background-color: lightslategray;
-    color: antiquewhite;
-    float: right;
-    text-align: center;
-    margin: 10px,0px;
-    color: white;
-    border-radius: 0px 10px 10px 0px;
-    height: 200px;
-    width: 100px;
-}
-*/
-
-
-
 .div3{
     margin: 10px;
     float : left;
@@ -98,7 +82,7 @@ text-decoration:underline;
     color: black;
     background-color: white;
     border-radius: 10px 0px 0px 10px;;
-    height: 185px;
+    height: 195px;
 }
 
 .div3 div:nth-child(3){
