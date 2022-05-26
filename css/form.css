@@ -37,3 +37,11 @@ ul {
 text-decoration:underline;
 }
 
+footer {
+    width: 100%;   
+    text-align: center;
+  }
+
+  footer div h4{
+    display:inline-block;
+}
