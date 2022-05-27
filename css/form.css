@@ -1,26 +1,31 @@
 *{
-    box-sizing: border-box;
-
-    margin: 0px;
+    padding:0;
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+body{
+    padding:0;
+    margin:0;
+    background-color: #000;
+    color: white;
+}
+
 header{
-    padding: 15px 15px;
-    /*position:fixed;*/
+    position: relative;
+    background-color: #000;
+}
+
+nav {
     display:flex;
-    align-items:center;
-    justify-content: space-between;
-    background-color: black;
+    justify-content: center;
+    position: relative;
+    
+    padding: 10px 0;
 }
 
-
-.logo{
-    width: 100px;
-}
-
-ul {
+ul.menu {
     margin: 0;
     padding: 0;
-    float: right;
     font-size:20px;
 }
 
@@ -28,6 +33,7 @@ ul {
     display: inline-block;
     list-style: none;
     padding: 0 15px;
+    text-transform: uppercase;
 }
 .menu-item a {
     color: white;
@@ -37,11 +43,31 @@ ul {
 text-decoration:underline;
 }
 
+.logo{
+    width: 100px;
+}
+header h4{
+    position: absolute;
+    top: 85%;
+    left: 100px;
+}
+
+/********************************************************************************************************************/
+
 footer {
+    margin-top: 60px;
+    padding: 20px 0;
     width: 100%;   
     text-align: center;
+    background-color: #202020;
+    
   }
 
   footer div h4{
-    display:inline-block;
+    margin-top: 20px;
+}
+
+
+footer p{
+    margin-top: 20px;
 }
