@@ -51,16 +51,12 @@
                 <label for="fecha" class="form-label" >Fecha de nacimiento*</label>
                 <input type="date"  id="fecha" name="fecha"> <!--Falta clase-->
             </div>
-            <div class="dropdown">
-                <label for="dropdownMenuButton1" class="form-label" >Genero*</label>
-                <button class="btn btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    &nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp&nbsp&nbsp
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="genero">
-                  <li><a class="dropdown-item" href="#">Femenino</a></li>
-                  <li><a class="dropdown-item" href="#">Masculino</a></li>
-                  <li><a class="dropdown-item" href="#">Otro</a></li>
-                </ul>
+            <div class="mb-3">
+                <label for="genero" class="form-label">Genero</label>
+                <br>
+                <input type="radio" name="genero" id="genero"><label for="genero">Masculino</label>
+                <input type="radio" name="genero" id="genero"><label for="genero">Femenino</label>
+                <input type="radio" name="genero" id="genero"><label for="genero">Otro</label>
             </div>
             </div>
             <div class="mb-3">
