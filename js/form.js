@@ -11,9 +11,17 @@ function validar(){
 
     if(nombre=="" || apellido=="" || email=="" || password=="" || cpassword=="" || fecha=="" || genero==""){
         alert("falta completar un campo obligatorio");
+        return false;
+
     }
     if(password != cpassword){
         alert("no coinsiden las contraseñas");
+        return false;
+        
+    }
+    if(password.length < 8){
+        alert("la contraseña debe tener mas de 8 caracteres");
+        return false;
     }
     
 }
