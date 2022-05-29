@@ -24,6 +24,62 @@ nav {
     z-index: 20;
 }
 
+
+/**********HAMBURGUESA********************/
+.nav-hamb{
+    position: fixed;
+    display:none;
+    background-color: #202020;
+    width: 250px;
+    height: 0vh;
+    z-index: 20;
+    transition: .5s
+}
+.fa-bars{
+    font-size: 40px;
+    cursor: pointer;
+    margin: 0 20px;
+    background-color:rgb(191, 5, 5);
+    padding: 10px;
+    display:none;
+}
+.nav-hamb li{
+    list-style: none;
+    margin: 30px 40px;
+    font-size: 20px;
+    width: 100%;
+    transition: .5s;
+    display:none;
+}
+.nav-hamb li:hover{
+    transform: scale(1.1);
+}
+.nav-hamb li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.nav-hamb li a:hover{
+    color:rgb(191, 5, 5);
+}
+
+#check{
+    display:none;
+    z-index: 30;
+}
+
+#check:checked ~ .nav-hamb{
+    height: 100vh;
+}
+#check:checked ~ .nav-hamb li{
+    display:block;
+}
+
+
+/**********HAMBURGUESA********************/
+
+
 ul.menu {
     margin: 0;
     padding: 0;
@@ -135,6 +191,16 @@ footer p{
 
 
 @media screen and (max-width: 768px) {
+    .fa-bars{
+        display:inline-block;
+    }
+    .nav-desktop{
+        display:none;
+    }
+    .nav-hamb{
+        display:block;
+    }
+
     video.video-banner{
         height: 400px;
     }
@@ -152,6 +218,10 @@ footer p{
     main{
         margin: 0 25px;
     }
+    main h2 {
+        margin: 0;
+    }
+    
     main section.peliculas article {
         width: calc(100%/3);
     }
@@ -162,6 +232,16 @@ footer p{
 
 
 @media screen and (max-width: 480px) {
+    .fa-bars{
+        display:inline-block;
+    }
+    .nav-desktop{
+        display:none;
+    }
+    .nav-hamb{
+       display:block;
+    }
+
     video.video-banner{
         height: 300px;
     }
@@ -178,6 +258,9 @@ footer p{
 
     main{
         margin: 0 0;
+    }
+    main h2 {
+        margin: 0;
     }
     main section.peliculas article {
         width: calc(100%/2);
