@@ -10,17 +10,17 @@ function validar(){
 
 
     if(nombre=="" || apellido=="" || email=="" || password=="" || cpassword=="" || fecha=="" || genero==""){
-        alert("falta completar un campo obligatorio");
+        alert("Falta completar un campo obligatorio");
         return false;
 
     }
     if(password != cpassword){
-        alert("no coinsiden las contraseñas");
+        alert("No coinciden las contraseñas");
         return false;
         
     }
-    if(password.length < 8){
-        alert("la contraseña debe tener mas de 8 caracteres");
+    if(password.length < 8 || cpassword.length < 8){
+        alert("Una contraseña tiene menos de 8 caracteres");
         return false;
     }
     
